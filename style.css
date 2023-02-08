@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    min-height: 100vh;
+    background:linear-gradient(to bottom , rgba(0,0,0,1) , rgba(0,0,0,0.5) , rgba(0,0,0,1)) ,url('/images/header-image.png')no-repeat center ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    position: absolute ;
+    top: 0;
+    width: 100%;
+    padding: 25px 0;
+}
+.logo {
+    width: 150px;
+}
+header select {
+    background: none;
+    color: #aaa;
+    padding: 5px 0 5px 10px ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 0.9rem;
+    border: 1px solid #aaaaaa;
+    outline: none;
+    margin-right: 10px;
+}
+header select option {
+    background: #000;
+    
+}
+ .premium {
+    color: #fff;
+    text-decoration: none;
+    background: #d81f26;
+    padding: 5px 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 0.9rem;
+    
+}
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    
+}
+header nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .content {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 44px;
+    margin-bottom: 5px;
+}
+header h3 {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+header p ,
+.qst .container>p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+header .inpt ,
+.qst .inpt {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    height: 50px;
+    
+}
+header input ,
+.qst input{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    outline: none;
+    padding: 8px 10px;
+    background: #0000009c;
+    border: 1px solid #ffffff54;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+header .content a ,
+.qst a {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    border-radius: 0;
+    border: 1px solid #ffffff54;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+::placeholder {
+    font-weight: 500;
+}
+
+.feature {
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+}
+.feature .content {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+.feature .content .row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ffffff7a;
+    border-top: 1px solid #ffffff7a;
+    padding: 25px 0;
+    gap: 50px;
+}
+.feature .content img {
+    width: 600px;
+}
+.feature h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+.feature p {
+    opacity: 0.8;
+    line-height: 30px;
+    font-weight: 300;
+}
+@media (max-width:1088px) {
+    .feature img{
+        width: 100% !important;
+        max-width: 500px;
+    }
+    .feature .row {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .feature h1 {
+        font-size: 1.5rem;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header .content a ,
+    .qst a{
+        font-size: 1rem;
+    } 
+}
+@media (max-width:430px) {
+    header nav .container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    header .content a ,
+    .qst a{
+        font-size: 0.9rem;
+    }
+}
+
+.qst {
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding: 50px 0;
+    text-align: center;
+}
+.qst h1{
+    margin-bottom: 30px;
+}
+.qst .items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.qst .item {
+    background: #292929;
+    padding: 6px 10px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.qst .show {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    align-items: center;
+    font-size: 0.95rem;
+   position: relative;
+   
+    
+}
+.qst .hidden {
+    text-align: left;
+    font-size: 1rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    display: none;
+}
+.qst .hidden p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 30px;
+}
+.qst .items i {
+    font-size: 0.9rem;
+}
+.qst .show::after {
+    content:  '';
+    position: absolute;
+    width: calc(100% + 100px);
+    height: 2px;
+    background: #000;
+    left: -30px;
+    bottom: -10px;
+}
+.active {
+    display: block !important;
+}
+.qst .container >p {
+    margin: 40px;
+    margin-bottom: 7px;
+}
+.qst .inpt {
+    margin: auto;
+}
